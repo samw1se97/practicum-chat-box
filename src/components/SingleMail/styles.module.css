@@ -1,0 +1,64 @@
+.message {
+  /* height: 66px; */
+  height: 70px;
+  width: 98%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 5px;
+}
+
+.message:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.message div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: smaller;
+}
+.message > .pic {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message .wrap2 {
+  /* flex-grow: 1; */
+  width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrap2 .names {
+  width: 70%;
+  font-weight: 600;
+}
+.wrap2 p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wrap2 > .msgPrev {
+  font-size: 0.75rem;
+}
+
+.message .hourWrap {
+  width: 36px;
+}
+.hourWrap > p {
+  font-size: 0.75rem;
+}
+.message img {
+  width: 100%;
+}
+
+.message svg {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+}

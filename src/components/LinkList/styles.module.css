@@ -1,0 +1,48 @@
+.singleLink {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.93rem;
+}
+
+.singleLink span {
+  display: flex;
+  padding: var(--link-padding);
+}
+
+.singleLink p {
+  flex-grow: 1;
+}
+
+.singleLink svg {
+  color: #929aa6;
+  font-size: 1.3rem;
+}
+
+.singleLink p {
+  font-weight: bold;
+}
+
+.singleLink .badge {
+  font-size: 0.8rem;
+  color: #fff;
+  width: 23px;
+  height: 23px;
+  margin-right: 7px;
+  border-radius: 8px;
+  background: #00a388c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.isActive {
+  color: var(--primary-color);
+}
+
+.singleLink:hover p {
+  color: #00a388c9;
+}
+.singleLink:hover svg {
+  color: #00a388c9;
+}

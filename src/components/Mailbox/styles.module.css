@@ -1,0 +1,24 @@
+.wraper {
+  padding: 0px 15px;
+}
+.header {
+  width: 280px;
+  /* padding: 18px 0; */
+  height: 70px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--grey-border);
+}
+
+.wraper svg {
+  font-size: 1.5rem;
+}
+
+.header a {
+  display: flex;
+  padding: var(--link-padding);
+  background-color: #bec4cd85;
+  border-radius: 10px;
+}
