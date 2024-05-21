@@ -1,14 +1,12 @@
 .mailList {
-  width: 360px;
+  width: 320px;
+  min-width: 320px;
   background: #b3bdcca6;
-  border-radius: 15px;
-  margin-top: 10px;
-  /* padding: 0 15px; */
+  border-radius: 15px 0 0 15px;
+  padding: 15px;
 }
 .inputWrap {
-  height: 60px;
-  padding: 0 15px;
-  /* margin-bottom: 18px; */
+  height: 70px;
   border-bottom: 1px solid var(--grey-border);
   display: flex;
   align-items: center;
@@ -27,16 +25,12 @@
 .mailList .messagesWrap {
   overflow-y: scroll;
   height: 622px;
-  padding: 10px 15px;
+  padding: 10px 0;
 }
 
 .mailList .messagesWrap::-webkit-scrollbar {
   width: 3px;
 }
-
-/* .mailList .messagesWrap::-webkit-scrollbar-track {
-  background-color: #b3bdcca6;
-} */
 .mailList .messagesWrap::-webkit-scrollbar-thumb {
   background-color: #7878786a;
 }

@@ -1,18 +1,16 @@
 import { useState } from 'react';
-import Navbar from './components/Navbar';
-import Mailbox from './components/Mailbox';
+import MainNav from './components/MainNav';
+import EmailsNav from './components/EmailsNav';
 import MailList from './components/MailList';
-import MailSender from './components/MailSender';
+import EmailPage from './components/EmailPage';
+import Layout from './Layout';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className='app'>
-      <Navbar />
-      <Mailbox />
-      <MailList />
-      <MailSender />
+      <Layout />
     </div>
   );
 }

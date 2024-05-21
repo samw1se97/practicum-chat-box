@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './styles.module.css';
 import { IoMail, IoStar } from 'react-icons/io5';
-function SingleMail({ chat }) {
+function EmailLi({ chat }) {
   const { members, msg } = chat.chat;
   const [chatMembers, setChatMembers] = useState([]);
   const [chatMsg, setChatMsg] = useState([]);
@@ -40,4 +40,4 @@ function SingleMail({ chat }) {
   );
 }
 
-export default SingleMail;
+export default EmailLi;

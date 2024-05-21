@@ -1,0 +1,51 @@
+.msgDetails{
+  width: 100%;
+  max-width: 100%;
+  padding-right: 15px;
+}
+
+details[open] summary{
+  border-bottom: transparent;
+}
+details[open] summary > p{
+  visibility: hidden;
+}
+
+.msgDetails summary{
+      width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .6rem 0;
+    border-bottom: 1px solid var(--grey-border);
+    cursor: pointer;
+
+}
+
+.msgDetails summary img{
+      width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.msgDetails summary h4 {
+    color: #000;
+    flex-shrink: 0;
+}
+.msgDetails summary p {
+        flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: .8rem;
+}
+.msgDetails summary time {
+    flex-shrink: 0;
+}
+
+.msgDetails > p{
+  padding: 2rem;
+  white-space: pre-line;
+  color: var(--primary-txt-color);
+  border-bottom: 1px solid var(--grey-border);
+}

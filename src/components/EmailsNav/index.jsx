@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
-import NewMessage from '../NewMessage/index';
-import LinkList from '../LinkList/index';
+import NewMsgBtn from '../NewMsgBtn/index';
 import { IoChevronBack } from 'react-icons/io5';
 import { HiOutlineInboxArrowDown } from 'react-icons/hi2';
 import { GrSend } from 'react-icons/gr';
@@ -9,7 +8,7 @@ import { FaRegStar } from 'react-icons/fa';
 import { GoPencil } from 'react-icons/go';
 import { MdOutlineDelete } from 'react-icons/md';
 
-function Mailbox() {
+function EmailsNav() {
   const linkList = [
     {
       name: 'inbox',
@@ -31,15 +30,23 @@ function Mailbox() {
         </a>
         <h2>Mailbox</h2>
       </header>
-      <NewMessage />
+      <NewMsgBtn />
 
       <div>
         {linkList.map((link) => (
-          <LinkList linkItem={link} />
+          <a href={link.href} className={styles.singleLink}>
+            <span>{link.icon}</span>
+            <p>{link.name}</p>
+            {link.number && (
+              <span className={`${styles.badge} ${styles.isActive}`}>
+                {link.number}
+              </span>
+            )}
+          </a>
         ))}
       </div>
     </div>
   );
 }
 
-export default Mailbox;
+export default EmailsNav;

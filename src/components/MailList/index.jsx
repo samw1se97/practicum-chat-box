@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './styles.module.css';
-import SingleMail from '../SingleMail';
+import EmailLi from '../EmailLi';
+
 function MailList() {
   const [chatlist, setChatList] = useState([]);
   useEffect(() => {
@@ -8,7 +9,6 @@ function MailList() {
       .then((res) => res.json())
       .then((data) => setChatList(data));
   }, []);
-  console.log(chatlist);
 
   return (
     <div className={styles.mailList}>
@@ -17,7 +17,7 @@ function MailList() {
       </div>
       <div className={styles.messagesWrap}>
         {chatlist.map((chat) => (
-          <SingleMail key={chat._id} chat={chat} />
+          <EmailLi key={chat._id} chat={chat} />
         ))}
       </div>
     </div>

@@ -1,0 +1,151 @@
+.loginPage{
+    width: 100vw;
+    display: flex;
+    /* padding: 5px 15px; */
+}
+.header{
+    height: 70px;
+    position: relative;
+    border-bottom: 1px solid var(--grey-border);
+}
+.header > p{
+    position: absolute;
+    bottom: 8px;
+    left: 18px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.loginForm{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+}
+
+.loginForm button:hover{
+    cursor: pointer;
+}
+
+.loginForm  > .formWrap{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}
+
+.formWrap > h3{
+    text-align: center;
+        margin: 45px 0 20px;
+}
+
+.formWrap > form{
+    /* display: flex;
+    flex-direction: column; */
+            width: 70%;
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+}
+
+.formWrap> form .inputContainer{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1px solid var(--grey-border);
+}
+
+.formWrap> form .inputContainer i{
+    display: flex;
+    font-size: larger;
+    color: var(--icons-color);
+}
+
+.formWrap > form input{
+    width: 100%;
+    height: 37px;
+    border: none;
+    /* padding: 5px 0; */
+}
+
+.formWrap > form input:focus{
+    outline: none;
+}
+
+.formWrap a, span{
+    font-size: 11px;
+}
+
+.formWrap > form > .resetPwd{
+    /* position: relative; */
+}
+
+.formWrap > form > .resetPwd > a{
+    float: inline-end;
+        padding: 10px 0;
+    text-decoration: underline;
+}
+
+
+.formWrap > form >.signInBtnWrap>.signInBtn{
+    width: fit-content;
+    font-size: 1rem;
+    padding: 13px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+}
+
+.formWrap > form > .signInBtnWrap{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 30px;
+}
+.formWrap .registerSpan {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.formWrap > .devider{
+    width: 70%;
+    border-top: 1px solid var(--grey-border);
+    display: flex;
+    justify-content: center;
+    margin: 33px 0 20px;
+}
+
+.formWrap > .devider > b{
+        color: var(--icons-color);
+    width: 15%;
+    text-align: center;
+    background: #fff;
+    translate: 0 -12px;
+}
+
+.gmailSignInBtn > button{
+    font-size: 1rem;
+    padding: 13px 22px;
+    border: 1px solid var(--border-active);
+    border-radius: 30px;
+    color: var(--primary-color);
+    background: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.loginPage > .loginRt{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-active);
+}
+
+.loginRt > img{
+    width: 40%;
+    height: auto;
+}

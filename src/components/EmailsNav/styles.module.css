@@ -1,3 +1,27 @@
+.wraper {
+  padding: 15px;
+  width: 250px;
+}
+.header {
+  height: 70px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--grey-border);
+}
+
+.wraper svg {
+  font-size: 1.5rem;
+}
+
+.header a {
+  display: flex;
+  padding: var(--link-padding);
+  background-color: #bec4cd85;
+  border-radius: 10px;
+}
+
 .singleLink {
   display: flex;
   gap: 1rem;

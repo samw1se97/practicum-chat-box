@@ -5,24 +5,37 @@
   font-family: 'Kumbh Sans', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 :root {
   --primary-color: #00a388c9;
+  --primary-txt-color : #a2aab4;
   --border-radius: 10px;
   --border-not-active: #00a38800;
   --border-active: #00a388c9;
   --bg-active: #00a3883c;
   --link-padding: 10px;
   --grey-border: #dee1e6;
+  --icons-color: #929aa6;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;    
+  background: none;
+}
+
 
 h1 {
   color: var(--primary-color);
   border: 1.5px solid var(--border-radius);
+}
+
+time{
+  font-size: .8rem;
+  color: var(--primary-txt-color);
 }
 
 .app {

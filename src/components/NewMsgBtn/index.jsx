@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 import { IoMailOutline } from 'react-icons/io5';
-function index() {
+function NewMsgBtn() {
   return (
     <a className={styles.link}>
       <span>
@@ -12,4 +12,4 @@ function index() {
   );
 }
 
-export default index;
+export default NewMsgBtn;
