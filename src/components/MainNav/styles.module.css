@@ -1,16 +1,15 @@
 .navbar {
-  min-width: 80px;
-  height: 100%;
-  padding: 18px 0;
-  border-right: 1px solid #dee1e6;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  padding: 1rem 0;
+  border-right: 1px solid #dee1e6;
 }
-.navbar > span {
-  display: flex;
-  padding: 10px;
+.navbar > svg {
+  width: 38px;
+  height: 38px;
+  margin: 0 auto;
 }
 .navbar > ul {
   list-style: none;

@@ -10,6 +10,7 @@ import {
   Routes,
 } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
+import NewMsg from './components/NewMsg';
 
 function Layout() {
   return (
@@ -17,8 +18,9 @@ function Layout() {
       {/* <LoginPage /> */}
       <MainNav />
       <EmailsNav />
-      <MailList />
-      <EmailPage />
+      {/* <NewMsg /> */}
+      {/* <MailList />
+      <EmailPage /> */}
     </>
   );
 }

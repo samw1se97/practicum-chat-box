@@ -1,6 +1,9 @@
-.link {
+a.link {
+  height: 48px;
+  padding: 0 1rem;
   color: #fff;
-  margin-bottom: 25px;
+  font-weight: 500;
+  margin: 1rem 0;
   background: var(--primary-color);
   border-radius: var(--border-radius);
   display: flex;
@@ -8,11 +11,13 @@
   gap: 1rem;
 }
 
-.link > svg {
+a.link > svg {
   display: flex;
+  color: inherit;
+  font-size: 1.4rem;
 }
 
-.link span {
+a.link span {
   padding: var(--link-padding);
   display: flex;
 }

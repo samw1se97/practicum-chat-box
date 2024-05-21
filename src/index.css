@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  margin-block: 0;
+  margin-inline: 0;
   box-sizing: border-box;
   font-family: 'Kumbh Sans', sans-serif;
 }
@@ -22,6 +24,11 @@ a {
   text-decoration: none;
 }
 
+button:hover,
+* a:hover {
+  cursor: pointer;
+}
+
 button {
   border: none;
   background: none;
@@ -37,7 +44,12 @@ time {
   color: var(--primary-txt-color);
 }
 
+ul {
+  list-style: none;
+}
+
 .app {
-  height: 100vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  grid-template-rows: 100dvh;
 }

@@ -4,9 +4,7 @@ import { IoMailOutline } from 'react-icons/io5';
 function NewMsgBtn() {
   return (
     <a className={styles.link}>
-      <span>
-        <IoMailOutline />
-      </span>
+      <IoMailOutline />
       <p>New message</p>
     </a>
   );

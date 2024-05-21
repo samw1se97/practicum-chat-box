@@ -25,9 +25,7 @@ function MainNav() {
   return (
     <>
       <nav className={styles.navbar}>
-        <span>
-          <IoLogoReact />
-        </span>
+        <IoLogoReact />
         <ul>
           {links.map((link) => (
             <a href={link.href} key={link.id}>
