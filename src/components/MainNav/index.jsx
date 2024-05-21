@@ -9,7 +9,6 @@ import {
   IoTimerOutline,
   IoVideocam,
 } from 'react-icons/io5';
-// import { IoVideocam } from 'react-icons/io5';
 import { FcBusinessman } from 'react-icons/fc';
 import { Outlet } from 'react-router-dom';
 

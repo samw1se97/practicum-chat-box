@@ -1,7 +1,6 @@
 .link {
   color: #fff;
   margin-bottom: 25px;
-
   background: var(--primary-color);
   border-radius: var(--border-radius);
   display: flex;
@@ -11,7 +10,6 @@
 
 .link > svg {
   display: flex;
-  /* padding: 5px; */
 }
 
 .link span {

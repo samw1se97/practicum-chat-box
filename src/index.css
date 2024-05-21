@@ -7,7 +7,7 @@
 
 :root {
   --primary-color: #00a388c9;
-  --primary-txt-color : #a2aab4;
+  --primary-txt-color: #a2aab4;
   --border-radius: 10px;
   --border-not-active: #00a38800;
   --border-active: #00a388c9;
@@ -23,18 +23,17 @@ a {
 }
 
 button {
-  border: none;    
+  border: none;
   background: none;
 }
-
 
 h1 {
   color: var(--primary-color);
   border: 1.5px solid var(--border-radius);
 }
 
-time{
-  font-size: .8rem;
+time {
+  font-size: 0.8rem;
   color: var(--primary-txt-color);
 }
 

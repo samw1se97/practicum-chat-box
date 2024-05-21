@@ -40,5 +40,3 @@ export const emailPgHdrIcons = [
   { id: 3, name: 'Delete Message', icon: MdDeleteOutline },
   { id: 4, name: 'Menu', icon: MdMenu },
 ];
-
-// export default { editorIconsRt, editorIconsLft };

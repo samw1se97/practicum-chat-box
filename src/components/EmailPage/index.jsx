@@ -1,10 +1,8 @@
 import React from 'react';
-import { TbLetterX } from 'react-icons/tb';
 import styles from './styles.module.css';
 import MsgLi from '../MsgLi';
 import TextArea from '../Textarea';
-import { emailPgHdrIcons, upldOrDelIcons } from '../../assets/icons/icons';
-import SendBtn from '../SendBtn';
+import { emailPgHdrIcons } from '../../assets/icons/icons';
 
 function EmailPage() {
   return (
