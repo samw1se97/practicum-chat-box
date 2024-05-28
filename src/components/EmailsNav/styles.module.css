@@ -47,18 +47,24 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-.main > nav .linkList li a svg{
+ /* .main nav .linkList li a._active{
+  color: var(--primary-color);
+} */
+
+.linkList li a svg{
   font-size: 1.2rem;
   color: var(--icons-color);
 }
-
-.main nav .linkList li a:active, 
-.main nav .linkList li a:active svg {
+a.active, .linkList li a.active > svg{
   color: var(--primary-color);
 }
+/* .main nav .linkList li a:active, 
+.main nav .linkList li a:active svg {
+  color: var(--primary-color);
+} */
 .main nav .linkList li a:hover, 
 .main nav .linkList li a:hover svg {
   color: var(--primary-color);

@@ -1,0 +1,11 @@
+.searchInput {
+  position: relative;
+  width: 100%;
+}
+.searchInput > input {
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  width: 100%;
+  border: none;
+  outline: none;
+}

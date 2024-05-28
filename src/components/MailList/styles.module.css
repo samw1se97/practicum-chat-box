@@ -1,11 +1,46 @@
 .mailList {
-  width: 320px;
+  /* width: 320px;
   min-width: 320px;
   background: #b3bdcca6;
-  border-radius: 15px 0 0 15px;
-  padding: 15px;
+  border-radius: 15px 0 0 15px; */
+    display: grid;
+    grid-template-columns: 295px 1fr;
+    height: 100%;
 }
-.inputWrap {
+.mailList > .container{
+  padding: 1rem 0;
+    height: 100%;
+}
+.mailList > .container > .innerContainer{
+      background-color: #f1f1f1;
+    height: calc(100dvh - 2rem);
+    border-radius: .6rem;
+    display: flex;
+    flex-direction: column;
+    /* padding: 1rem 0; */
+}
+
+.innerContainer > figure{
+  padding: 0 1rem;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    border-bottom: 1px solid #DEE1E6;
+}
+
+
+
+.mailList > .container > .innerContainer >.messages{
+  padding: .5rem;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: .5rem;
+    height: 100%;
+    overflow-y: auto;
+}
+/* .inputWrap {
   height: 70px;
   border-bottom: 1px solid var(--grey-border);
   display: flex;
@@ -26,7 +61,7 @@
   overflow-y: scroll;
   height: 622px;
   padding: 10px 0;
-}
+} */
 
 .mailList .messagesWrap::-webkit-scrollbar {
   width: 3px;

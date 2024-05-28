@@ -16,35 +16,59 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: .8rem;
 }
 
-.navbar a {
-  width: 100%;
-  display: flex;
-  border-right: 3px solid var(--border-not-active);
-  justify-content: center;
+.navbar > ul li a {
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px solid var(--border-not-active);
 }
-.navbar li {
+.navbar > ul li a > div{
+width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.navbar > ul li a * {
+    transition: .05s ease-in-out all;
+}
+.navbar > ul li{
+  /* width: 100%; */
+  /* display: flex; */
+  /* border-right: 3px solid var(--border-not-active); */
+  /* justify-content: center; */
+}
+/* .navbar li {
   padding: 10px;
   display: flex;
   border-radius: 10px;
-}
+} */
 .navbar svg {
   font-size: 1.5rem;
   color: #929aa6;
 }
+ 
+.navbar > ul li > .active > div{
+  background-color: var(--bg-active);
+  
+} 
+.navbar > ul li > a.active svg{
+  color: var(--primary-color);
+  
+} 
 
-.isActive {
-  background-color: #00a3884e;
-}
-
-.navbar a:hover {
+.navbar > ul li a:hover {
   border-right: 3px solid var(--border-active);
 }
 
-.navbar a:hover svg {
+.navbar > ul li a:hover svg {
   color: var(--border-active);
 }
-.navbar a:hover li {
+.navbar > ul li a:hover div {
   background-color: var(--bg-active);
 }

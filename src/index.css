@@ -24,6 +24,12 @@ a {
   text-decoration: none;
 }
 
+/* a._active, a._active  svg{
+  color: var(--primary-color);
+} */
+
+
+
 button:hover,
 * a:hover {
   cursor: pointer;

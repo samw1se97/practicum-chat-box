@@ -8,29 +8,31 @@ import {
   IoIosStar,
   IoIosTrash,
 } from 'react-icons/io';
-import { HiOutlineInboxArrowDown, HiOutlineStar } from 'react-icons/hi2';
+import { HiOutlineInboxArrowDown } from 'react-icons/hi2';
 import { GoPencil } from 'react-icons/go';
+import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 
 function EmailsNav() {
+  const navigate = useNavigate();
   const linkList = [
     {
       name: 'inbox',
       icon: <HiOutlineInboxArrowDown />,
-      href: 'http://',
+      href: 'inbox',
       number: 2,
     },
-    { name: 'Sent Emails', icon: <IoIosSend />, href: 'http://' },
-    { name: 'Favorites', icon: <IoIosStar />, href: 'http://' },
-    { name: 'Drafts', icon: <GoPencil />, href: 'http://' },
-    { name: 'Deleted', icon: <IoIosTrash />, href: 'http://' },
-    { name: 'More', icon: <IoIosArrowDown />, href: 'http://' },
+    { name: 'Sent Emails', icon: <IoIosSend />, href: 'sent' },
+    { name: 'Favorites', icon: <IoIosStar />, href: 'favorites' },
+    { name: 'Drafts', icon: <GoPencil />, href: '/' },
+    { name: 'Deleted', icon: <IoIosTrash />, href: '/' },
+    { name: 'More', icon: <IoIosArrowDown />, href: '/' },
   ];
 
   return (
     <div className={styles.wraper}>
       <div className={styles.main}>
         <figure>
-          <button>
+          <button onClick={() => navigate('/')}>
             <IoChevronBack />
           </button>
           <h2>Mailbox</h2>
@@ -42,30 +44,22 @@ function EmailsNav() {
             {linkList &&
               linkList.map((el) => (
                 <li key={el.name}>
-                  <a>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? `${styles.active}` : ''
+                    }
+                    state={el.href}
+                    to={el.href}>
                     {el.icon}
                     <span>{el.name}</span>
-                  </a>
+                  </NavLink>
                 </li>
               ))}
           </ul>
         </nav>
-
-        {/* 
-        <div>
-          {linkList.map((link) => (
-            <a href={link.href} className={styles.singleLink}>
-              <span>{link.icon}</span>
-              <p>{link.name}</p>
-              {link.number && (
-                <span className={`${styles.badge} ${styles.isActive}`}>
-                  {link.number}
-                </span>
-              )}
-            </a>
-          ))}
-        </div> */}
       </div>
+      <Outlet />
+      {/* <MailList /> */}
     </div>
   );
 }

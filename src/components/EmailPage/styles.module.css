@@ -1,11 +1,25 @@
 .mailSender {
-  flex-grow: 1;
+  /* flex-grow: 1;
   display: flex;
   height: 100dvh;
   max-width: 100%;
   padding: 15px;
   min-width: 0;
-  flex-direction: column;
+  flex-direction: column; */
+      padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    max-width: 100%;
+    overflow-x: auto;
+}
+.mailSender > figure {
+  display: flex;
+  height: 70px;
+  min-height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--grey-border);
 }
 figure > div > span {
   background-color: #fd5e5e;
@@ -24,14 +38,6 @@ figure > div > span {
   cursor: pointer;
 }
 
-.mailSender > figure {
-  display: flex;
-  height: 70px;
-  min-height: 70px;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var(--grey-border);
-}
 
 .mailSender > figure > .icons {
   display: flex;
