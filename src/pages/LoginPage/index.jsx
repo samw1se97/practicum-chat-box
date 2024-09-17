@@ -3,15 +3,19 @@ import styles from './styles.module.css';
 import loginImg from '../../../public/loginImg.svg';
 import { IoAt, IoLockClosedOutline } from 'react-icons/io5';
 import { FcGoogle } from 'react-icons/fc';
+import Header from '../../components/Header';
 function LoginPage() {
   return (
     <div className={styles.loginPage}>
       <div className={styles.loginForm}>
-        <div>
+        <Header>
+          <p className={styles.lgn_hdr_txt}>Mailbox - communicate full-world</p>
+        </Header>
+        {/* <div>
           <header className={styles.header}>
             <p>Mailbox - communicate full-world</p>
           </header>
-        </div>
+        </div> */}
         <div className={styles.formWrap}>
           <h3>Welcome to Mailbox</h3>
 
@@ -38,7 +42,7 @@ function LoginPage() {
             </div>
           </form>
           <span>
-            Don't have an account?{' '}
+            Don't have an account?
             <a href='' className={styles.registerSpan}>
               Register here
             </a>

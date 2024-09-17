@@ -11,15 +11,20 @@
   flex-direction: column;
   height: 100dvh;
 }
-.main figure {
-  height: 70px;
+
+.main > header > .hdr_content {
   display: flex;
+  min-height: 100%;
   align-items: center;
   gap: 1rem;
-  border-bottom: 1px solid var(--grey-border);
 }
 
-
+.main > header > .hdr_content > button {
+  font-size: 1.3rem;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  background-color: var(--btn-bg-primary);
+}
 
 .main figure button {
   background-color: #f1f1f1;
@@ -43,29 +48,23 @@
 }
 
 .main nav .linkList li a {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
   font-weight: 600;
 }
 
- /* .main nav .linkList li a._active{
-  color: var(--primary-color);
-} */
-
-.linkList li a svg{
+.linkList li a svg {
   font-size: 1.2rem;
   color: var(--icons-color);
 }
-a.active, .linkList li a.active > svg{
+a.active,
+.linkList li a.active > svg {
   color: var(--primary-color);
 }
-/* .main nav .linkList li a:active, 
-.main nav .linkList li a:active svg {
-  color: var(--primary-color);
-} */
-.main nav .linkList li a:hover, 
+
+.main nav .linkList li a:hover,
 .main nav .linkList li a:hover svg {
   color: var(--primary-color);
 }

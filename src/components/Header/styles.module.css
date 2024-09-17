@@ -1,0 +1,6 @@
+.header {
+  position: relative;
+  min-height: 70px;
+  padding: 0rem 0.5rem;
+  border-bottom: 1px solid var(--grey-border);
+}

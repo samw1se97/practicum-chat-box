@@ -11,6 +11,7 @@ import {
 import { HiOutlineInboxArrowDown } from 'react-icons/hi2';
 import { GoPencil } from 'react-icons/go';
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
+import Header from '../Header';
 
 function EmailsNav() {
   const navigate = useNavigate();
@@ -31,12 +32,14 @@ function EmailsNav() {
   return (
     <div className={styles.wraper}>
       <div className={styles.main}>
-        <figure>
-          <button onClick={() => navigate('/')}>
-            <IoChevronBack />
-          </button>
-          <h2>Mailbox</h2>
-        </figure>
+        <Header>
+          <div className={styles.hdr_content}>
+            <button onClick={() => navigate('/')}>
+              <IoChevronBack />
+            </button>
+            <h2>Mailbox</h2>
+          </div>
+        </Header>
         <NewMsgBtn />
 
         <nav>

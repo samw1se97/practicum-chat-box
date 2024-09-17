@@ -9,6 +9,7 @@ import {
   useParams,
   useSearchParams,
 } from 'react-router-dom';
+import Header from '../Header';
 
 function EmailPage(props) {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -34,19 +35,24 @@ function EmailPage(props) {
     };
     return date.toLocaleString('en-US', options);
   };
-  // console.log(msg.msg);
 
   return (
     <aside className={styles.mailSender}>
-      <figure>
-        <div>
-          <span>Promising offers</span>
+      <Header>
+        <div className={styles.hdr_content}>
+          <div className={styles.lablels}>
+            <span>Promising offers</span>
+          </div>
+          <div className={styles.icons}>
+            {emailPgHdrIcons &&
+              emailPgHdrIcons.map((el) => (
+                <button key={el.name}>
+                  <el.icon />
+                </button>
+              ))}
+          </div>
         </div>
-        <div className={styles.icons}>
-          {emailPgHdrIcons &&
-            emailPgHdrIcons.map((el) => <el.icon key={el.name} />)}
-        </div>
-      </figure>
+      </Header>
       <div className={styles.chatWrap}>
         <time>{formatDate(msg.lastDate)}</time>
         <h2>{msg.subject}</h2>

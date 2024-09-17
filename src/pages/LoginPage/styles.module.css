@@ -2,7 +2,7 @@
   width: 100vw;
   display: flex;
 }
-.header {
+/* .header {
   height: 70px;
   position: relative;
   border-bottom: 1px solid var(--grey-border);
@@ -13,6 +13,11 @@
   left: 18px;
   font-size: 13px;
   font-weight: 600;
+} */
+
+.loginPage > .loginForm > header >.lgn_hdr_txt{
+  position: absolute;
+  bottom: 10px;
 }
 
 .loginForm {

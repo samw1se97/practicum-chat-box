@@ -14,6 +14,7 @@
   --border-not-active: #00a38800;
   --border-active: #00a388c9;
   --bg-active: #00a3883c;
+  --btn-bg-primary: #929aa68c;
   --link-padding: 10px;
   --grey-border: #dee1e6;
   --icons-color: #929aa6;
@@ -38,6 +39,7 @@ button:hover,
 button {
   border: none;
   background: none;
+  display: flex;
 }
 
 h1 {

@@ -20,13 +20,17 @@
     /* padding: 1rem 0; */
 }
 
-.innerContainer > figure{
-  padding: 0 1rem;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-    border-bottom: 1px solid #DEE1E6;
+.mailList > .container >.innerContainer > header > .hdr_content{
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+}
+
+.mailList > .container >.innerContainer > header > .hdr_content > input{
+      flex-grow: 1;
+    padding: .5rem .4rem;
+    border-radius: .5rem;
+    border: none;
 }
 
 
@@ -40,28 +44,6 @@
     height: 100%;
     overflow-y: auto;
 }
-/* .inputWrap {
-  height: 70px;
-  border-bottom: 1px solid var(--grey-border);
-  display: flex;
-  align-items: center;
-}
-.mailList input {
-  flex-grow: 1;
-  height: 30px;
-  border-radius: 5px;
-  border-style: none;
-  padding-left: 10px;
-  outline-width: 0px;
-  background-color: #f8f8f8;
-  box-shadow: rgb(14 14 14 / 77%) 0px 2px 6px -4px inset;
-}
-
-.mailList .messagesWrap {
-  overflow-y: scroll;
-  height: 622px;
-  padding: 10px 0;
-} */
 
 .mailList .messagesWrap::-webkit-scrollbar {
   width: 3px;

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styles from './styles.module.css';
 import EmailLi from '../EmailLi';
-import InputSearch from '../InputSearch';
 import EmailPage from '../EmailPage';
-import { Outlet, useLocation, useParams } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
+import Header from '../Header';
 
 function MailList() {
   const { pathname } = useLocation();
@@ -24,9 +24,11 @@ function MailList() {
     <div className={styles.mailList}>
       <div className={styles.container}>
         <div className={styles.innerContainer}>
-          <figure>
-            <InputSearch />
-          </figure>
+          <Header>
+            <div className={styles.hdr_content}>
+              <input type='text' placeholder='search...' />
+            </div>
+          </Header>
           <div className={styles.messages}>
             {chatlist.map((chat) => (
               <EmailLi key={chat._id} chat={chat} />
