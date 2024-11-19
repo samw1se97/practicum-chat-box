@@ -25,11 +25,9 @@ a {
   text-decoration: none;
 }
 
-/* a._active, a._active  svg{
-  color: var(--primary-color);
-} */
-
-
+input{
+  outline: none;
+}
 
 button:hover,
 * a:hover {
@@ -41,6 +39,8 @@ button {
   background: none;
   display: flex;
 }
+
+
 
 h1 {
   color: var(--primary-color);
